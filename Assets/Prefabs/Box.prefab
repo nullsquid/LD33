@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6640e44830ab6534885c75f926472938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: yellow
+  color: red
 --- !u!212 &21238100
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -96,7 +96,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 267c5cec32adc884d9501c8fc738db17, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d512b689ea5331445872d0b77ace0f73, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

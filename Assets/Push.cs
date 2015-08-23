@@ -28,6 +28,7 @@ public class Push : Action {
 
 	public void PushBox(){
 		//switch(direction){
+		//TODO why is this only firing to the right?
 		if(direction == "LEFT"){
 			//scanner.curObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 100);
 			scanner.curObject.transform.position = GameObject.Find("R_Region").transform.position;//new Vector3(-11, 4, 0);

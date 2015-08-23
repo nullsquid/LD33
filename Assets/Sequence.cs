@@ -100,11 +100,13 @@ public class Sequence : MonoBehaviour {
 					switch(parameter){
 					case "RIGHT":
 						action.GetComponent<Push>().direction = parameter;
+					Debug.Log(parameter);
 
 						action.GetComponent<SpriteRenderer>().sprite = action.GetComponent<Push>().pushSpriteRight;
 						break;
 					case "LEFT":
 						action.GetComponent<Push>().direction = parameter;
+					Debug.Log(parameter);
 						action.GetComponent<SpriteRenderer>().sprite = action.GetComponent<Push>().pushSpriteLeft;
 						break;
 
@@ -131,13 +133,12 @@ public class Sequence : MonoBehaviour {
 
 
 			for (int i = 0; i < steps.Count; i++){
-				Debug.Log (i);
+
 				steps[i].GetComponent<SpriteRenderer>().sprite = stepSprites["emptyIdle"];
 				curStep = steps[i];
 				foreach(Transform child in curStep.transform){
+					Debug.Log(child);
 					if(child.GetComponent<Push>() != null){
-						//nextAction = child.GetComponent<GameObject>();
-						//nextAction.GetComponent<Push>().PushBox("LEFT");
 						EventManager.TriggerEvent("pushListener");
 					}
 				}
